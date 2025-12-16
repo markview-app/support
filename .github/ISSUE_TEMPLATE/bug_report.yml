@@ -1,0 +1,125 @@
+name: 🐛 Bug Report
+description: Report a bug or issue with MarkView
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this issue! Please fill out the form below to help us fix the bug.
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is
+      placeholder: When I click the export button, nothing happens...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue? Please be as detailed as possible
+      placeholder: |
+        1. Open a markdown file with '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+  
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+      placeholder: The file should export to Word format
+    validations:
+      required: true
+  
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happens?
+      placeholder: Nothing happens when I click the button
+    validations:
+      required: true
+  
+  - type: input
+    id: version
+    attributes:
+      label: MarkView Version
+      description: "🔍 Find this in: Extension popup (top-right) or Chrome Extensions page"
+      placeholder: e.g., 1.0.4
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser are you using?
+      options:
+        - Chrome
+        - Edge
+        - Brave
+        - Opera
+        - Other Chromium-based
+    validations:
+      required: true
+  
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser Version (helpful but not required)
+      description: "🔍 Find this in: chrome://settings/help or browser menu → About"
+      placeholder: e.g., 120.0.6099.109
+  
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+  
+  - type: textarea
+    id: console
+    attributes:
+      label: "Console Errors (if available)"
+      description: |
+        If you see any errors in DevTools Console (F12 → Console tab), please share them.
+        💡 Note: Console logging is limited in production releases, so this field is optional.
+        ⚠️ Please remove any sensitive information before pasting.
+      render: shell
+      placeholder: |
+        Paste any console errors here if available.
+        Otherwise, leave blank or type "None"
+  
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (optional)
+      description: Drag & drop images here or paste from clipboard to help explain the problem
+      placeholder: Visual examples help us understand the issue faster
+  
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+      placeholder: This only happens with files larger than 1MB...
+  
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I have removed any sensitive information from screenshots/logs
+          required: true

@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Support & FAQ
+    url: https://getmarkview.com/support.html
+    about: Read FAQs and get help with common questions
+  - name: 💬 Discussions
+    url: https://github.com/markview-app/support/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 🌐 Website
+    url: https://getmarkview.com/
+    about: Visit the official MarkView website
+  - name: 🛍️ Chrome Web Store
+    url: https://chrome.google.com/webstore/detail/cfopbpknalachedpcddhgbgjoigklien
+    about: View extension details and reviews
