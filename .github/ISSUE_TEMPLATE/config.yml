@@ -10,5 +10,8 @@ contact_links:
     url: https://getmarkview.com/
     about: Visit the official MarkView website
   - name: 🛍️ Chrome Web Store
-    url: https://chrome.google.com/webstore/detail/cfopbpknalachedpcddhgbgjoigklien
+    url: https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien
     about: View extension details and reviews
+  - name: 🛍️ Microsoft Edge Add-ons
+    url: https://microsoftedge.microsoft.com/addons/detail/kpobglkjeapfinbaecjidahlnnohcaed
+    about: View extension on Microsoft Edge Add-ons

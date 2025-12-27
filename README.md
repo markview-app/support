@@ -1,10 +1,11 @@
 # MarkView Support
 
-👋 Welcome to the official bug tracker and feature request hub for **MarkView** - the powerful Chrome extension for viewing and exporting Markdown files!
+Official bug tracker and feature request hub for **MarkView** - a powerful browser extension for viewing and exporting Markdown files.
 
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/cfopbpknalachedpcddhgbgjoigklien?label=Chrome%20Web%20Store&style=for-the-badge&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/cfopbpknalachedpcddhgbgjoigklien)
-[![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/cfopbpknalachedpcddhgbgjoigklien?label=Users&style=for-the-badge&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/cfopbpknalachedpcddhgbgjoigklien)
-[![Chrome Web Store Rating](https://img.shields.io/chrome-web-store/rating/cfopbpknalachedpcddhgbgjoigklien?label=Rating&style=for-the-badge&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/cfopbpknalachedpcddhgbgjoigklien)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/cfopbpknalachedpcddhgbgjoigklien?label=Chrome&style=for-the-badge&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien)
+[![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/cfopbpknalachedpcddhgbgjoigklien?label=Users&style=for-the-badge&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien)
+[![Chrome Web Store Rating](https://img.shields.io/chrome-web-store/rating/cfopbpknalachedpcddhgbgjoigklien?label=Rating&style=for-the-badge&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien)
+[![Microsoft Edge](https://img.shields.io/badge/Edge-Download-0078D4?style=for-the-badge&logo=microsoft-edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/kpobglkjeapfinbaecjidahlnnohcaed)
 
 ---
 
@@ -30,71 +31,41 @@ Have an idea to make MarkView better?
 
 ---
 
-## 📊 Issue Status Labels
+## 📋 Guidelines
 
-| Label | Meaning |
-|-------|---------|
-| 👀 **needs-triage** | We haven't reviewed it yet |
-| ✅ **confirmed** | Bug confirmed, will be fixed |
-| 🔄 **in-progress** | Actively working on it |
-| 🎉 **fixed** | Done! Will be in next release |
-| 🤔 **need-info** | We need more information |
-| ❌ **wontfix** | Won't be implemented (with explanation) |
-
----
-
-## ⚡ Response Time
-
-We aim to respond to:
-
-- 🔥 **Critical bugs**: Within 24 hours
-- 🐛 **Other bugs**: Within 2-3 days
-- ✨ **Features**: Within 3-5 days
-- ❓ **Questions**: Within 1-2 days
-
-*Note: We're a small team, so response times may vary during busy periods.*
-
----
-
-## � Guidelines
-
-**Note:** This is a support repository for bug reports and feature requests. The source code is private and not available for contribution.
-Before submitting:
+Before submitting an issue:
 
 - **Search first** - Check if your issue already exists
-- **Be specific** - Provide details, steps, and screenshots
-- **One issue per report** - Don't combine multiple bugs/features
-- **Remove sensitive data** - No passwords, API keys, or personal info
+- **Be specific** - Provide details, steps to reproduce, and screenshots
+- **One issue per report** - Don't combine multiple bugs or features
+- **No sensitive data** - Remove passwords, API keys, or personal information
+
+*This is a support repository for bug reports and feature requests. The source code is private.*
 
 ---
 
 ## 🌐 Links
 
-- [Official Website](https://getmarkview.com/)
-- [Chrome Web Store](https://chrome.google.com/webstore/detail/cfopbpknalachedpcddhgbgjoigklien)
-- [Support & FAQ](https://getmarkview.com/support.html)
-- [Privacy Policy](https://getmarkview.com/privacy-policy)
-
----
-
-*MarkView supports 12 languages - feel free to submit issues in your preferred language!*
+- **Website:** [https://getmarkview.com/](https://getmarkview.com/)
+- **Chrome:** [Install MarkView](https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien)
+- **Edge:** [Install MarkView](https://microsoftedge.microsoft.com/addons/detail/kpobglkjeapfinbaecjidahlnnohcaed)
+- **Support & FAQ:** [https://getmarkview.com/support.html](https://getmarkview.com/support.html)
+- **Privacy Policy:** [https://getmarkview.com/privacy-policy](https://getmarkview.com/privacy-policy)
 
 ---
 
 ## 📧 Contact
 
-- **Security issues**: Please email <support@getmarkview.com> with subject "Security Vulnerability" (don't post publicly)
-- **General inquiries**: Open an issue or start a discussion
+- **Security issues:** Email <support@getmarkview.com> with subject "Security Vulnerability"
+- **General inquiries:** Open an issue or start a discussion
 
 ---
 
-## ⭐ Show Your Support
+## ⭐ Enjoying MarkView?
 
-If you love MarkView:
-
-- ⭐ Star this repo
-- 📝 Leave a review on [Chrome Web Store](https://chrome.google.com/webstore/detail/cfopbpknalachedpcddhgbgjoigklien)
-- 🐦 Share with friends and colleagues
+- Leave a review on [Chrome Web Store](https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien) or [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/kpobglkjeapfinbaecjidahlnnohcaed)
+- Star this repository
+- Share with friends and colleagues
 
 ---
 
