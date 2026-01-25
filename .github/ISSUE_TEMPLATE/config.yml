@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: 📖 Support & FAQ
-    url: https://getmarkview.com/support.html
+    url: https://getmarkview.com/support
     about: Read FAQs and get help with common questions
   - name: 💬 Discussions
     url: https://github.com/markview-app/support/discussions

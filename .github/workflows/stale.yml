@@ -1,53 +1,60 @@
 name: Close Stale Issues
 on:
   schedule:
-    # Run weekly on Mondays at 00:00 UTC (less aggressive than daily)
+    # Run weekly on Mondays at 00:00 UTC
     - cron: '0 0 * * 1'
   workflow_dispatch: # Allow manual trigger
 
 permissions:
   issues: write
-  pull-requests: write
 
 jobs:
-  stale:
+  # Handle questions separately (shorter stale period)
+  stale-questions:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/stale@v9
         with:
-          # Days before marking as stale (more generous for support repo)
-          days-before-stale: 90
-          days-before-issue-stale: 90
+          # Only process questions
+          only-issue-labels: 'question'
 
-          # Days before closing after marked stale
-          days-before-close: 30
-          days-before-issue-close: 30
+          # Questions become stale faster (often already answered)
+          days-before-stale: 60
+          days-before-close: 14
 
-          # Label to use for stale issues
           stale-issue-label: 'stale'
 
-          # Message when marking as stale
+          stale-issue-message: |
+            This question has been inactive for 60 days and will be automatically closed in 14 days if no further activity occurs.
+
+            If you still need help, please add a comment to keep this open. Thank you! 🙏
+
+          close-issue-message: |
+            This question was automatically closed due to inactivity. If you still need help, feel free to reopen or create a new issue. Thank you! 🙏
+
+          operations-per-run: 30
+
+  # Handle all other issues (longer stale period)
+  stale-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          # Don't mark these important labels as stale
+          exempt-issue-labels: 'bug,critical,in-progress,confirmed,enhancement,needs-review,needs-info,needs-triage,question'
+
+          # More generous timeline for bugs/features
+          days-before-stale: 90
+          days-before-close: 30
+
+          stale-issue-label: 'stale'
+
           stale-issue-message: |
             This issue has been inactive for 90 days and will be automatically closed in 30 days if no further activity occurs.
 
             If this is still relevant, please add a comment to keep it open. Thank you! 🙏
 
-          # Message when closing
           close-issue-message: |
             This issue was automatically closed due to inactivity. If you believe this is still relevant, feel free to reopen or create a new issue. Thank you! 🙏
 
-          # Don't mark issues with these labels as stale
-          exempt-issue-labels: 'bug,critical,in-progress,confirmed,enhancement,needs-review,needs-info'
-
-          # Questions can close faster (already answered or no longer relevant)
-          exempt-issue-labels: ''
-          only-issue-labels: 'question'
-          days-before-stale: 60
-          days-before-close: 14
-
-          # Don't mark PRs as stale (no PRs in support repo anyway)
-          exempt-all-pr-milestones: true
-          exempt-all-pr-assignees: true
-
-          # Lighter operations for weekly runs
-          operations-per-run: 60
+          operations-per-run: 30
