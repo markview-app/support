@@ -8,15 +8,6 @@ body:
       value: |
         Thanks for taking the time to report a bug! Your feedback helps improve MarkView for everyone.
 
-  - type: input
-    id: title
-    attributes:
-      label: Title
-      description: A brief summary of the issue
-      placeholder: "e.g., Export button doesn't work on large files"
-    validations:
-      required: true
-
   - type: textarea
     id: description
     attributes:
