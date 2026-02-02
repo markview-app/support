@@ -3,13 +3,16 @@ on:
   schedule:
     # Run weekly on Mondays at 00:00 UTC
     - cron: '0 0 * * 1'
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch: # Allow manual trigger for testing
 
 permissions:
   issues: write
 
 jobs:
-  # Handle questions separately (shorter stale period)
+  # ============================================================================
+  # JOB 1: Handle QUESTIONS (30 + 7 = 37 days total)
+  # Quick turnaround for questions that are usually already answered
+  # ============================================================================
   stale-questions:
     runs-on: ubuntu-latest
     steps:
@@ -17,44 +20,61 @@ jobs:
         with:
           # Only process questions
           only-issue-labels: 'question'
+          
+          # Exempt questions that need more info from user
+          exempt-issue-labels: 'needs-info'
 
-          # Questions become stale faster (often already answered)
-          days-before-stale: 60
-          days-before-close: 14
+          # Aggressive timeline for questions
+          days-before-stale: 30    # Mark stale after 30 days
+          days-before-close: 7     # Close 7 days after stale (total: 37 days)
 
           stale-issue-label: 'stale'
 
           stale-issue-message: |
-            This question has been inactive for 60 days and will be automatically closed in 14 days if no further activity occurs.
+            This question has been inactive for 30 days and will be automatically closed in 7 days if no further activity occurs.
 
             If you still need help, please add a comment to keep this open. Thank you! 🙏
 
           close-issue-message: |
-            This question was automatically closed due to inactivity. If you still need help, feel free to reopen or create a new issue. Thank you! 🙏
+            This question was automatically closed due to inactivity. 
+            
+            If you still need help, feel free to reopen this issue or create a new one. Thank you! 🙏
 
           operations-per-run: 30
 
-  # Handle all other issues (longer stale period)
-  stale-issues:
+  # ============================================================================
+  # JOB 2: Handle OTHER ISSUES (45 + 7 = 52 days total)
+  # Faster cleanup for bugs/features while still being reasonable
+  # ============================================================================
+  stale-other-issues:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/stale@v9
         with:
-          # Don't mark these important labels as stale
-          exempt-issue-labels: 'bug,critical,in-progress,confirmed,enhancement,needs-review,needs-info,needs-triage,question'
+          # ONLY exempt issues that are actively being worked on or need action
+          exempt-issue-labels: 'critical,in-progress,confirmed,needs-info,question'
+          
+          # Explanation of exempt labels:
+          # - critical: High priority, must keep open
+          # - in-progress: Actively being worked on
+          # - confirmed: Bug confirmed, planning to fix
+          # - needs-info: Waiting for user response
+          # - question: Handled by separate job above
 
-          # More generous timeline for bugs/features
-          days-before-stale: 90
-          days-before-close: 30
+          # Shorter timeline for faster cleanup
+          days-before-stale: 45    # Mark stale after 45 days
+          days-before-close: 7     # Close 7 days after stale (total: 52 days)
 
           stale-issue-label: 'stale'
 
           stale-issue-message: |
-            This issue has been inactive for 90 days and will be automatically closed in 30 days if no further activity occurs.
+            This issue has been inactive for 45 days and will be automatically closed in 7 days if no further activity occurs.
 
-            If this is still relevant, please add a comment to keep it open. Thank you! 🙏
+            If this is still relevant to you, please add a comment to keep it open. Thank you! 🙏
 
           close-issue-message: |
-            This issue was automatically closed due to inactivity. If you believe this is still relevant, feel free to reopen or create a new issue. Thank you! 🙏
+            This issue was automatically closed due to inactivity. 
+            
+            If you believe this is still relevant, feel free to reopen this issue or create a new one. Thank you! 🙏
 
           operations-per-run: 30

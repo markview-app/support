@@ -27,7 +27,7 @@ Have an idea to make MarkView better?
 
 ## ❓ Get Help
 
-**[Ask a Question →](https://github.com/markview-app/support/issues/new?template=question.yml)** | **[Support & FAQ →](https://getmarkview.com/support.html)** | **[Discussions →](https://github.com/markview-app/support/discussions)**
+**[Ask a Question →](https://github.com/markview-app/support/issues/new?template=question.yml)** | **[Support & FAQ →](https://getmarkview.com/support)** | **[Discussions →](https://github.com/markview-app/support/discussions)**
 
 ---
 
@@ -49,7 +49,7 @@ Before submitting an issue:
 - **Website:** [https://getmarkview.com/](https://getmarkview.com/)
 - **Chrome:** [Install MarkView](https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien)
 - **Edge:** [Install MarkView](https://microsoftedge.microsoft.com/addons/detail/kpobglkjeapfinbaecjidahlnnohcaed)
-- **Support & FAQ:** [https://getmarkview.com/support.html](https://getmarkview.com/support.html)
+- **Support & FAQ:** [https://getmarkview.com/support](https://getmarkview.com/support)
 - **Privacy Policy:** [https://getmarkview.com/privacy-policy](https://getmarkview.com/privacy-policy)
 
 ---
@@ -72,7 +72,7 @@ Before submitting an issue:
 <div align="center">
   Made with ❤️ by the MarkView Team<br>
   <a href="https://getmarkview.com/">Website</a> •
-  <a href="https://getmarkview.com/support.html">Support</a> •
+  <a href="https://getmarkview.com/support">Support</a> •
   <a href="https://github.com/markview-app/support/issues">Issues</a> •
   <a href="https://github.com/markview-app/support/discussions">Discussions</a>
 </div>

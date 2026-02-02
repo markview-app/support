@@ -14,11 +14,13 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: |
-            👋 **Thanks for your first issue!**
+            👋 **Thanks for opening your first issue!**
 
-            We'll review this as soon as possible. While you wait:
-            - 📖 [Support & FAQ](https://getmarkview.com/support.html) - Common questions
-            - ⭐ [Chrome Web Store](https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien) - Rate us if you like MarkView!
-            - ⭐ [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/kpobglkjeapfinbaecjidahlnnohcaed) - Rate us on Edge!
+            I'll review this as soon as possible. In the meantime:
 
-            Thanks for helping us improve MarkView! 🚀
+            - 📖 Check our [Support & FAQ](https://getmarkview.com/support) for common questions
+            - ⭐ If you're enjoying MarkView, please consider leaving a review:
+              - [Chrome Web Store](https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien)
+              - [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/kpobglkjeapfinbaecjidahlnnohcaed)
+
+            Thanks for helping improve MarkView! 🚀
