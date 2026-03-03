@@ -1,0 +1,35 @@
+name: Notify New Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send email notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.GMAIL_USER }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          to: ${{ secrets.NOTIFY_EMAILS }}
+          from: MarkView Support <${{ secrets.GMAIL_USER }}>
+          subject: "[MarkView] New issue #${{ github.event.issue.number }}: ${{ github.event.issue.title }}"
+          body: |
+            A new issue has been opened on the MarkView support repository.
+
+            Issue:    #${{ github.event.issue.number }} — ${{ github.event.issue.title }}
+            Type:     ${{ github.event.issue.labels[0].name || 'unlabeled' }}
+            Opened by: ${{ github.event.issue.user.login }}
+            URL:      ${{ github.event.issue.html_url }}
+
+            ---
+            ${{ github.event.issue.body }}
+            ---
+
+            Reply or manage this issue at:
+            ${{ github.event.issue.html_url }}
