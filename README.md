@@ -5,7 +5,7 @@ Official bug tracker and feature request hub for **MarkView** - a powerful brows
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/cfopbpknalachedpcddhgbgjoigklien?label=Chrome&style=for-the-badge&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien)
 [![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/cfopbpknalachedpcddhgbgjoigklien?label=Users&style=for-the-badge&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien)
 [![Chrome Web Store Rating](https://img.shields.io/chrome-web-store/rating/cfopbpknalachedpcddhgbgjoigklien?label=Rating&style=for-the-badge&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/cfopbpknalachedpcddhgbgjoigklien)
-[![Microsoft Edge](https://img.shields.io/badge/Edge-Download-0078D4?style=for-the-badge&logo=microsoft-edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/kpobglkjeapfinbaecjidahlnnohcaed)
+[![Microsoft Edge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fgetproductdetailsbycrxid%2Fkpobglkjeapfinbaecjidahlnnohcaed&query=%24.version&prefix=v&label=Edge&color=0078D4&style=for-the-badge&logo=microsoft-edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/kpobglkjeapfinbaecjidahlnnohcaed)
 
 ---
 
